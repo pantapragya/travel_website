@@ -1,0 +1,25 @@
+<?php
+$host="localhost";
+$username="root";
+$password="";
+$db="happy";
+$F=$_POST['fname'];
+$S=$_POST['sname'];
+$E=$_POST['email'];
+$B=$_POST['bday'];
+$G=$_POST['gender'];
+$P=$_POST['passwd'];
+$conn= mysqli_connect($host,$username,$password,$database);
+if(!$conn){
+echo "Database not created";
+}else{
+$query="INSERT INTO Manxe(Firstname,Surname,Email,Birthday,Gender,Password)
+VALUES('$F','$S','$E', '$B','$G','$P')";
+$check=mysqli_query($conn, $query);
+if(!$check){
+echo "Record not added".mysqli_error();
+}else{
+echo "Record added succesfully.";
+}
+}
+?>
