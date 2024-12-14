@@ -1,0 +1,19 @@
+<?php
+$host = "localhost";
+$username = "root";
+$password = "";
+$conn = mysqli_connect($host, $username, $password);
+
+if (!$conn) {
+    echo "Server not connected: " . mysqli_connect_error();
+} else {
+    $query = "CREATE DATABASE happy";
+    $check = mysqli_query($conn, $query);
+    
+    if (!$check) {
+        echo "Database not created: " . mysqli_error($conn);
+    } else {
+        echo "Database created";
+    }
+}
+?>
