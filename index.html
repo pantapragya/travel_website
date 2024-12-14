@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore the World-Travel Website</title>
+    <title>ExploreHaven -Travel Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,7 +38,7 @@
         }
         .hero img {
             width: 100%;
-            height: 400px;
+            height: 550px;
             object-fit: cover;
         }
         .hero-text {
@@ -48,49 +48,96 @@
             transform: translate(-50%, -50%);
             background: rgba(0, 0, 0, 0.5);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 20px;
         }
         .destinations {
-            padding: 40px 20px;
+            padding: 15px 20px;
             text-align: center;
         }
         .destination {
             display: inline-block;
             margin: 15px;
-            width: 250px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 9px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
             overflow: hidden;
         }
         .destination img {
             width: 100%;
-            height: 150px;
+            height: 200px;
             object-fit: cover;
         }
         .destination h3 {
             margin: 10px 0;
         }
+        .destination button{
+            width: 40%;
+            height: 3vh;
+            border-radius: 10px;
+            background: #0077b6;
+            border: none;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            font-size: 0.7rem;
+            font-weight: 700;
+            transition: 0.2s linear;
+        }
+        .destination button:hover{
+            scale: 1.1;
+            font-size: 1.3 rem;
+            background-color: transparent;
+            backdrop-filter: brightness(40%);
+            color: #0077b6;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            box-shadow: rgba 0 0 10px 3px #0077b6;
+        }
+        header { grid-area: header; }
+
+main {
+  grid-area: main;
+  width: 90%;
+  max-width: 1300px;
+  margin:auto auto;
+}
+aside {
+  grid-area: aside;
+} 
+ #layout {
+  background-color: #efefef;
+}
+
+#layout {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-areas:
+  'header header header header header'
+  'main main  main main aside';
+}
         .contact {
             background: #0077b6;
             color: white;
             padding: 20px;
             text-align: center;
         }
+      
     </style>
+    <script type="text/javascript" src="wishlist.js" async></script>
 </head>
 <body>
     <header>
-        <h1>Explore the World</h1>
-        <p>Your Adventure Starts Here</p>
+        <h1>Explore Haven</h1>
+        <p>Your Adventure Begins Here</p>
     </header>
     <nav>
-        <a href="#destinations">Destinations</a>
+        <a href="destination.html">Destinations</a>
         <a href="about.html">About Us</a>
         <a href="tips.html">Travel Tips</a>
         <a href="contact.html">Contact</a>
     </nav>
     <section class="hero">
-        <img src="C:\xampp\htdocs\Pragya\map.jpg" alt="Travel Banner">
+        <img src="C:\xampp\htdocs\Pragya\fp.jpg" alt="Travel Banner">
         <div class="hero-text">
             <h1>Discover the Immense Beauty of World</h1>
             <p>Plan your next vaccation with us</p>
@@ -98,43 +145,157 @@
     </section>
     <section id="destinations" class="destinations">
         <h2>Featured Destinations</h2>
+        <main>
         <div class="destination">
+            <div id="d0">
             <img src="C:\xampp\htdocs\Pragya\paris.jpg" alt="Destination 1">
             <h3>Paris, France</h3>
             <p>The City of Light.</p>
         </div>
+        <input type="button" name="" value="Add to Wishlist" id="0" class="but"><br><br>
+          <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
         <div class="destination">
+             <div id="d1">
             <img src="C:\xampp\htdocs\Pragya\London.jpg" alt="Destination 2">
             <h3>London, UK</h3>
             <p>The City of Square Mile.</p>
         </div>
+         <input type="button" name="" value="Add to Wishlist" id="1" class="but"><br><br>
+         <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
         <div class="destination">
+             <div id="d2">
             <img src="C:\xampp\htdocs\Pragya\japan.jpg" alt="Destination 3">
             <h3> Yoshino Nara prefecture, Japan</h3>
             <p>The City full of Royal Scluptures and Bloom.</p>
         </div>
+          <input type="button" name="" value="Add to Wishlist" id="2" class="but"><br><br>
+          <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
         <div class="destination">
+             <div id="d3">
             <img src="C:\xampp\htdocs\Pragya\egypt.jpg" alt="Destination 4">
             <h3>Pyramids of Giza, Egypt</h3>
             <p>Explore the Mysteries of Pyramids.</p>
         </div>
+          <input type="button" name="" value="Add to Wishlist" id="3" class="but"><br><br>
+          <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
         <div class="destination">
+             <div id="d4">
             <img src="C:\xampp\htdocs\Pragya\dubai.jpg" alt="Destination 5">
             <h3>Burj Khalifa, Dubai</h3>
             <p>The City of Towers.</p>
         </div>
+          <input type="button" name="" value="Add to Wishlist" id="4" class="but"><br><br>
+         <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
         <div class="destination">
+             <div id="d5">
             <img src="C:\xampp\htdocs\Pragya\Nepal.jpeg" alt="Destination 6">
             <h3>Mt.Everest, Nepal</h3>
             <p>The Coldness of himalaysa with intense beauty.</p>
         </div>
+          <input type="button" name="" value="Add to Wishlist" id="5" class="but"><br><br>
+         <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
         <div class="destination">
+             <div id="d6">
             <img src="C:\xampp\htdocs\Pragya\indonesia.webp" alt="Destination 7">
             <h3>Bali, Indonesia</h3>
-            <p>Relax on beautiful beaches and immerse yourself in rich Balinese culture.</p>
+            <p>Relax on beautiful beaches and immerse yourself in rich Balinese culture.</p><br><br>
+         
         </div>
+          <input type="button" name="" value="Add to Wishlist" id="6" class="but"><br><br>
+        <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
          <div class="destination">
+             <div id="d7">
             <img src="C:\xampp\htdocs\Pragya\us.jpg" alt="Destination 8">
             <h3>New York city, US</h3>
             <p>Explore the vibrant streets, iconic skyline, and diverse culture of NYC.</p>
         </div>
+          <input type="button" name="" value="Add to Wishlist" id="7" class="but"><br><br>
+          <button>Book a ticket</button><br><br>
+    </div>
+         <div class="destination">
+             <div id="d8">
+            <img src="C:\xampp\htdocs\Pragya\costa.jpg" alt="Destination 9">
+            <h3>Alajuela, Costa Rica</h3>
+            <p>Explore the beautiful colours of flowers and markets.</p>
+        </div>
+          <input type="button" name="" value="Add to Wishlist" id="8" class="but"><br><br>
+         <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
+         <div class="destination">
+             <div id="d9">
+            <img src="C:\xampp\htdocs\Pragya\turkey.webp" alt="Destination 10">
+            <h3>Istanbul, Turkey</h3>
+            <p>Explore the city of love with your loved ones.</p>
+        </div>
+          <input type="button" name="" value="Add to Wishlist" id="9" class="but"><br><br>
+        <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
+         <div class="destination">
+             <div id="d10">
+            <img src="C:\xampp\htdocs\Pragya\spain.jpg" alt="Destination 11">
+            <h3>Barcelona, Spain</h3>
+            <p>Explore the rich architecture, gastronomy, and culture of Spain.</p>
+        </div>
+          <input type="button" name="" value="Add to Wishlist" id="10" class="but"><br><br>
+       <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
+         <div class="destination">
+             <div id="d11">
+            <img src="C:\xampp\htdocs\Pragya\ireland.jpg" alt="Destination 12">
+            <h3>Kerry, Ireland</h3>
+            <p>Experience the beautiful view of greenery and mountains.</p>
+        </div>
+          <input type="button" name="" value="Add to Wishlist" id="11" class="but"><br><br>
+          <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
+         <div class="destination">
+             <div id="d12">
+            <img src="C:\xampp\htdocs\Pragya\thailand.jpg" alt="Destination 13">
+            <h3>Bangkok, Thailand</h3>
+            <p>View the diverse attractions and experiences of lively life of Bangkok.</p>
+        </div>
+          <input type="button" name="" value="Add to Wishlist" id="12" class="but"><br><br>
+          <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
+         <div class="destination">
+             <div id="d13">
+            <img src="C:\xampp\htdocs\Pragya\morocco.jpg" alt="Destination 14">
+            <h3> Marrakesh, Morocco</h3>
+            <p>Explore the ancient walled city, mosques, palaces and lush gardens.</p>
+        </div>
+          <input type="button" name="" value="Add to Wishlist" id="13" class="but"><br><br>
+           <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
+        <div class="destination">
+             <div id="d14">
+            <img src="C:\xampp\htdocs\Pragya\sa.jpg" alt="Destination 15">
+            <h3>Cape Town, South Africa</h3>
+            <p>Experience the dream view of endless natural beauty and clifftop views with pastel pink neighborhoods and turquoise waters.</p>
+        </div>
+          <input type="button" name="" value="Add to Wishlist" id="14" class="but"><br><br>
+           <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
+         <div class="destination">
+             <div id="d15">
+            <img src="C:\xampp\htdocs\Pragya\bora.jpg" alt="Destination 16">
+            <h3>Bora Bora, French Polynesia</h3>
+            <p>Explore the beauty of most famous island of Tahiti.</p>
+        </div>
+          <input type="button" name="" value="Add to Wishlist" id="15" class="but"><br><br>
+            <a href="book.html"> <button>Book a ticket</button></a><br><br>
+    </div>
+    <a href="#">Go to top</a>
+</main>
+ <aside id = "wishlist">
+        <h2 class="center">My Wishlist</h2>
+    </aside>
+</body>
+</html>
+
