@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Flight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .flight-category {
+            margin-bottom: 20px;
+        }
+        .flight-category h2 {
+            color: #555;
+        }
+        .flight {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .flight:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        .flight h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .flight .price {
+            font-size: 16px;
+            color: #28a745;
+        }
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Available Flights</h1>
+ 
+        <div class="flight-category">
+            <h2>First Class</h2>
+            <div class="flight">
+                <h3>Distance less than 500 miles from your destination</h3>
+                <a href="bank.html"><button>$750 per flight</button></a>
+            </div>
+             <div class="flight">
+                <h3>Distance between 500 to 2,000 miles from your destination</h3>
+               <a href="bank.html"><button>$1,350 per flight</button></a>
+            </div>
+            <div class="flight">
+                <h3>Distance between 2,000 to 3,000 miles from your destination</h3>
+                <a href="bank.html"><button>$2,050 per flight</button></a>
+            </div>
+            <div class="flight">
+                <h3>Distance between 3,000 to 3,500 miles from your destination</h3>
+                <a href="bank.html"><button>$3,000 per flight</button></a>
+            </div>
+            <div class="flight">
+                <h3>Distance more than 3,500 miles from your destination</h3>
+               <a href="bank.html"><button>$5,000 per flight</button></a>
+            </div>
+        </div>
+
+        <div class="flight-category">
+            <h2>Business Class</h2>
+            <div class="flight">
+                <h3>Distance less than 500 miles from your destination</h3>
+                <a href="bank.html"><button>$350 per flight</button></a>
+            </div>
+             <div class="flight">
+                <h3>Distance between 500 to 2,000 miles from your destination</h3>
+               <a href="bank.html"><button>$950 per flight</button></a>
+            </div>
+            <div class="flight">
+                <h3>Distance between 2,000 to 3,000 miles from your destination</h3>
+                <a href="bank.html"><button>$1,450 per flight</button></a>
+            </div>
+            <div class="flight">
+                <h3>Distance between 3,000 to 3,500 miles from your destination</h3>
+                <a href="bank.html"><button>$2,000 per flight</button></a>
+            </div>
+            <div class="flight">
+                <h3>Distance more than 3,500 miles from your destination</h3>
+               <a href="bank.html"><button>$3,700 per flight</button></a>
+            </div>
+        </div>
+
+        <div class="flight-category">
+            <h2>Economy Class</h2>
+             <div class="flight">
+                <h3>Distance less than 500 miles from your destination</h3>
+                <a href="bank.html"><button>$150 per flight</button></a>
+            </div>
+             <div class="flight">
+                <h3>Distance between 500 to 2,000 miles from your destination</h3>
+               <a href="bank.html"><button>$750 per flight</button></a>
+            </div>
+            <div class="flight">
+                <h3>Distance between 2,000 to 3,000 miles from your destination</h3>
+                <a href="bank.html"><button>$1,200 per flight</button></a>
+            </div>
+            <div class="flight">
+                <h3>Distance between 3,000 to 3,500 miles from your destination</h3>
+                <a href="bank.html"><button>$1,550 per flight</button></a>
+            </div>
+            <div class="flight">
+                <h3>Distance more than 3,500 miles from your destination</h3>
+               <a href="bank.html"><button>$2,900 per flight</button></a>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>

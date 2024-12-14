@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .room-category {
+            margin-bottom: 20px;
+        }
+        .room-category h2 {
+            color: #555;
+        }
+        .room {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .room:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        .room h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .room .price {
+            font-size: 16px;
+            color: #28a745;
+        }
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Available Rooms</h1>
+
+        <div class="room-category">
+            <h2>Luxury Rooms</h2>
+            <div class="room">
+                <h3>Presidential Suite</h3>
+               <a href="bank.html"><button>$550 per night</button></a>
+            </div>
+            <div class="room">
+                <h3>Royal Suite</h3>
+               <a href="bank.html"><button>$400 per night</button></a>
+            </div>
+        </div>
+
+        <div class="room-category">
+            <h2>Fine Rooms</h2>
+            <div class="room">
+                <h3>Deluxe Room</h3>
+                <a href="bank.html"><button>$299 per night</button></a>
+            </div>
+            <div class="room">
+                <h3>Executive Room</h3>
+            <a href="bank.html"><button>$350 per night</button></a>
+            </div>
+        </div>
+
+        <div class="room-category">
+            <h2>Common Rooms</h2>
+            <div class="room">
+                <h3>Standard Room</h3>
+               <a href="bank.html"><button>$190 per night</button></a>
+            </div>
+            <div class="room">
+                <h3>Budget Room</h3>
+                <a href="bank.html"><button>$100 per night</button></a>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
