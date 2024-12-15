@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExploreHaven -Travel Website</title>
+    <title>ExploreHaven - Travel Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,6 +15,35 @@
             color: white;
             padding: 15px 20px;
             text-align: center;
+            position: relative;
+        }
+        .auth-container {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .auth-form {
+            margin: 5px 0;
+        }
+        .auth-form input {
+            padding: 5px;
+            margin: 2px;
+            border: none;
+            border-radius: 5px;
+        }
+        .auth-form button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0077b6;
+            color: white;
+            cursor: pointer;
+        }
+        .auth-form button:hover {
+            background-color: #005f8a;
         }
         nav {
             display: flex;
@@ -70,7 +99,7 @@
         .destination h3 {
             margin: 10px 0;
         }
-        .destination button{
+        .destination button {
             width: 40%;
             height: 3vh;
             border-radius: 10px;
@@ -83,45 +112,38 @@
             font-weight: 700;
             transition: 0.2s linear;
         }
-        .destination button:hover{
-            scale: 1.1;
-            font-size: 1.3 rem;
+        .destination button:hover {
+            transform: scale(0.5);
+            font-size: 1.3rem;
             background-color: transparent;
             backdrop-filter: brightness(40%);
             color: #0077b6;
             border: 1px solid rgba(0, 0, 0, 0.5);
-            box-shadow: rgba 0 0 10px 3px #0077b6;
+            box-shadow: 0 0 10px 3px #0077b6;
         }
-        header { grid-area: header; }
-
-main {
-  grid-area: main;
-  width: 90%;
-  max-width: 1300px;
-  margin:auto auto;
-}
-aside {
-  grid-area: aside;
-} 
- #layout {
-  background-color: #efefef;
-}
-
-#layout {
-  display: grid;
-  grid-gap: 10px;
-  padding: 10px;
-  grid-template-areas:
-  'header header header header header'
-  'main main  main main aside';
-}
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        aside {
+            grid-area: aside;
+        }
+        #layout {
+            background-color: #efefef;
+            display: grid;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-areas:
+            'header header header header header'
+            'main main main main aside';
+        }
         .contact {
             background: #0077b6;
             color: white;
             padding: 20px;
             text-align: center;
         }
-      
     </style>
     <script type="text/javascript" src="wishlist.js" async></script>
 </head>
@@ -129,6 +151,10 @@ aside {
     <header>
         <h1>Explore Haven</h1>
         <p>Your Adventure Begins Here</p>
+        <div class="auth-container">
+                <button type="submit"><a href="signin.html"> Sign In</a></button>
+                <button type="submit"><a href="signup.html"> Sign Up</a></button>
+        </div>
     </header>
     <nav>
         <a href="destination.html">Destinations</a>
@@ -140,17 +166,17 @@ aside {
         <img src="C:\xampp\htdocs\Pragya\fp.jpg" alt="Travel Banner">
         <div class="hero-text">
             <h1>Discover the Immense Beauty of World</h1>
-            <p>Plan your next vaccation with us</p>
+            <p>Plan your next vacation with us</p>
         </div>
     </section>
     <section id="destinations" class="destinations">
         <h2>Featured Destinations</h2>
         <main>
-        <div class="destination">
-            <div id="d0">
-            <img src="C:\xampp\htdocs\Pragya\paris.jpg" alt="Destination 1">
-            <h3>Paris, France</h3>
-            <p>The City of Light.</p>
+            <div class="destination">
+                <div id="d0">
+                    <img src="C:\xampp\htdocs\Pragya\paris.jpg" alt="Destination 1">
+                    <h3>Paris, France</h3>
+                    <p>The City of Light.</p>
         </div>
         <input type="button" name="" value="Add to Wishlist" id="0" class="but"><br><br>
           <a href="book.html"> <button>Book a ticket</button></a><br><br>
@@ -291,11 +317,17 @@ aside {
           <input type="button" name="" value="Add to Wishlist" id="15" class="but"><br><br>
             <a href="book.html"> <button>Book a ticket</button></a><br><br>
     </div>
+    <div class="destination">
+        <div id="d15">
+       <img src="C:\xampp\htdocs\Pragya\india.jpg" alt="Destination 3">
+       <h3> Taj Mahal, India</h3>
+       <p>An ivory-white marble mausoleum on the right bank of the river Yamuna.</p>
+   </div>
+     <input type="button" name="" value="Add to Wishlist" id="16" class="but"><br><br>
+     <a href="book.html"> <button>Book a ticket</button></a><br><br>
+</div>
     <a href="#">Go to top</a>
 </main>
- <aside id = "wishlist">
-        <h2 class="center">My Wishlist</h2>
-    </aside>
 </body>
 </html>
 

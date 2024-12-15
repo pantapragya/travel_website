@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)file:///C:/xampp/htdocs/Pragya/bank.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Bank Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        input {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script type="text/javascript">
+        function check(event) {
+            event.preventDefault(); 
+            var accountNumber = document.forms["form"]["an"].value;
+            if (accountNumber.length < 10 || accountNumber.length > 13) {
+                alert("Invalid Account Number");
+            } else {
+                alert("Ticket booked");
+                window.location.href = "index.html"; 
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter your Bank Details to book a ticket.</h1>
+        <form name="form" onsubmit="check(event)">
+            <label for="account-name">Account Holder Name</label>
+            <input type="text" id="account-name" name="account-name" placeholder="Enter your name" required="">
+
+            <label for="account-number">Account Number</label>
+            <input type="text" id="account-number" name="an" placeholder="Enter your account number" required="">
+
+            <label for="bank-name">Bank Name</label>
+            <input type="text" id="bank-name" name="bank-name" placeholder="Enter your bank name" required="">
+
+            <label for="ifsc-code">IFSC Code</label>
+            <input type="text" id="ifsc-code" name="ifsc-code" placeholder="Enter IFSC code" required="">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div></body></html>
